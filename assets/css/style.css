@@ -19,12 +19,13 @@ header {
     border-bottom-style: solid;
     border-bottom-width: thin;
     border-bottom-color: #ccc;
+    z-index: 1000;
 }
 
 h1 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 
@@ -54,12 +55,12 @@ h1 {
 }
 
 #Nav a {
-    color: #777;
+    color: rgba(119, 119, 119, 0.616);
     text-decoration-line: none;
     padding: 0 7px;
 }
 
-.content {
+.contentHolder {
     width: 960px;
     margin: 120px auto;
     position: relative;
@@ -67,4 +68,72 @@ h1 {
     border-style: solid;
     border-width: thin;
     border-color: #ccc;
+}
+
+.content {
+    margin: 10px 30px;
+    padding: 20px 0;
+    border-top: solid #7777772d;
+}
+
+#profilePic {
+    float: left;
+    margin-right: 25px;
+    margin-top: 7px;
+}
+
+.content p {
+    margin-top: 0;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+input,textarea {
+    width: 100%;
+    font-size: 20px;
+    border-color: #7777772d;
+    border-width: thin;
+}
+
+textarea {
+    height: 200px;
+}
+
+input {
+    width: 890px;
+    padding: 10px 0 10px 10px;
+}
+
+::placeholder {
+    color: #7777772d;
+}
+
+::-webkit-input-placeholder {
+    color: #7777772d;
+}
+
+:-ms-input-placeholder {
+    color: #7777772d;
+}
+
+#submit {
+    color: white;
+    background: #4aaaa5;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    height: 40px;
+    width: 115px;
+}
+
+.images {
+    height: 250px;
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
 }
