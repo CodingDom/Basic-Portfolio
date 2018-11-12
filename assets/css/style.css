@@ -45,10 +45,18 @@ h1 {
     float: left;
 }
 
-nav {
+#Nav {
+    color: #7777772d;
+    font-size: 20px;
     float: right;
-    color: #777777;
+    margin: 25px 0;
+    right: 0;
+}
+
+#Nav a {
+    color: #777;
     text-decoration-line: none;
+    padding: 0 7px;
 }
 
 .content {
