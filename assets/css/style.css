@@ -110,11 +110,17 @@ h2 {
 input,textarea {
     width: 100%;
     font-size: 20px;
+    color: #777777;
     border-color: #E5E5E5;
     border-style: solid;
     border-width: thin;
 }
 
+/* Making sure the style stays the same and adding effects to other browsers */
+textarea:focus, input:focus {
+    color: #777777;
+    border-color: #4AC199;
+}
 /* Making sure the text area has a nice default size for aesthetic purposes
 and because that's how the homework example looks.
 */
