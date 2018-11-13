@@ -1,3 +1,4 @@
+/* Setting up the main defaults of the page */
 html,body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
@@ -6,10 +7,12 @@ html,body {
     line-height: 32px;
 }
 
+/* Adding flavor to the webpage */
 body {
     background-image: url("../images/hex.png");
 }
 
+/* Where my name and the navigation bar resides */
 header {
     background-color: #fff;
     position: fixed;
@@ -22,6 +25,7 @@ header {
     z-index: 1000;
 }
 
+/* Mainly used for my name */
 h1 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
@@ -29,12 +33,13 @@ h1 {
 }
 
 
-
+/* Adjusting size of the contents within my header to match my main content */
 .heading {
     width: 960px;
     margin: 0 auto;
 }
 
+/* The styling for my name */
 .name {
     color: #fff;
     background-color: #4aaaa5;
@@ -46,6 +51,8 @@ h1 {
     float: left;
 }
 
+/* I used #e5e5e5 instead of #7777772d since it's compatible with my other browsers*/
+/* Had to use an id instead of the nav tag since the colors didn't seem to change when using the tag */
 #Nav {
     color: #e5e5e5;
     font-size: 20px;
@@ -54,12 +61,14 @@ h1 {
     right: 0;
 }
 
+/* Editing the links to not have underlines, and made them darker than the | separators */
 #Nav a {
     color: rgba(119, 119, 119, 0.616);
     text-decoration: none;
     padding: 0 7px;
 }
 
+/* Designing and sizing of the background for the main content */
 .contentHolder {
     width: 960px;
     margin: 120px auto;
@@ -70,6 +79,7 @@ h1 {
     border-color: #ccc;
 }
 
+/* Setting up the boundaries of the main content and adding the border design udner the heading*/
 .content {
     margin: 10px 30px;
     padding: 20px 0;
@@ -77,20 +87,26 @@ h1 {
     border-top-color: #e5e5e5;
 }
 
+/* Margin used to align picture with text while float was used to wrap the text around the image */
 #profilePic {
     float: left;
     margin-right: 25px;
     margin-top: 7px;
 }
 
+/* Making sure the p tag sticks towards the top of the content */
 .content p {
     margin-top: 0;
 }
 
+/* Individual headnigs for each page */
+/* Used margin-bottom to provide a nice amount of spacing between the heading and the content */
 h2 {
     margin-bottom: 5px;
 }
 
+/* Making sure the border of my inputs/textarea isn't too dark nor thick */
+/* Made the sizing align with the border above the main content */
 input,textarea {
     width: 100%;
     font-size: 20px;
@@ -98,15 +114,21 @@ input,textarea {
     border-width: thin;
 }
 
+/* Making sure the text area has a nice default size for aesthetic purposes
+and because that's how the homework example looks.
+*/
 textarea {
     height: 200px;
 }
 
+/* Used 890 width instead of 100% to compensate for the 10px padding */
+/* (100%=900px on my page) */
 input {
     width: 890px;
     padding: 10px 0 10px 10px;
 }
 
+/* Setting up the placeholder text color for the most popular browsers */
 ::placeholder {
     color: #e5e5e5;
 }
@@ -119,6 +141,7 @@ input {
     color: #e5e5e5
 }
 
+/* Used to stylize the submit button, also used an id for when it's time to add javascript */
 #submit {
     color: white;
     background: #4aaaa5;
@@ -131,11 +154,13 @@ input {
     width: 115px;
 }
 
+/* Added some hover effects to sprinkle in some extra style on the button */
 #submit:hover {
     cursor: pointer;
     background-color: #4AC199;
 }
 
+/* Used for setting up the default design for the gallery navigation of my portfolio */
 .images {
     height: 150px;
     width: 250px;
@@ -143,20 +168,26 @@ input {
     margin-bottom: 40px;
     float: left;
 }
+
+/* Used to give an overlay/button type of effect to the gallery so viewers will know they're accessible */
 .images:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
+/* Changed the background of the text to stand out from the non-hovered items */
 .images:hover .imageLabel {
     background-color: #4AC199;
 }
 
+/* The smaller width causes the images to be in columns of two */
+/* The overflow is set to auto to allow the main content's background to include the gallery */
 .imageContainer {
     width: 70%;
     overflow: auto;
 }
 
+/* Designing the banner of text along the gallery thumnbnails */
 .imageLabel {
     color: #fff;
     background: #4aaaa5;
@@ -168,12 +199,13 @@ input {
     bottom: 60px;
     }
 
+/* Designs and placement for my page's footer */
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: grey;
+    background-color: #666666;
     border-top: 8px solid #4aaaa5;
     text-align: center;
     color: white;
