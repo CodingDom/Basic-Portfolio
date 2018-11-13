@@ -25,7 +25,7 @@ header {
 h1 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
-    padding: 20px 30px;
+    padding: 10px 30px;
 }
 
 
@@ -47,16 +47,16 @@ h1 {
 }
 
 #Nav {
-    color: #7777772d;
+    color: #e5e5e5;
     font-size: 20px;
     float: right;
-    margin: 25px 0;
+    margin: 30px 0;
     right: 0;
 }
 
 #Nav a {
     color: rgba(119, 119, 119, 0.616);
-    text-decoration-line: none;
+    text-decoration: none;
     padding: 0 7px;
 }
 
@@ -73,7 +73,8 @@ h1 {
 .content {
     margin: 10px 30px;
     padding: 20px 0;
-    border-top: solid #7777772d;
+    border-top: solid;
+    border-top-color: #e5e5e5;
 }
 
 #profilePic {
@@ -93,7 +94,7 @@ h2 {
 input,textarea {
     width: 100%;
     font-size: 20px;
-    border-color: #7777772d;
+    border-color: #e5e5e5;
     border-width: thin;
 }
 
@@ -107,15 +108,15 @@ input {
 }
 
 ::placeholder {
-    color: #7777772d;
+    color: #e5e5e5;
 }
 
 ::-webkit-input-placeholder {
-    color: #7777772d;
+    color: #e5e5e5;
 }
 
 :-ms-input-placeholder {
-    color: #7777772d;
+    color: #e5e5e5
 }
 
 #submit {
@@ -130,10 +131,53 @@ input {
     width: 115px;
 }
 
+#submit:hover {
+    cursor: pointer;
+    background-color: #4AC199;
+}
+
 .images {
-    height: 250px;
+    height: 150px;
     width: 250px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 35px;
+    margin-bottom: 40px;
     float: left;
+}
+.images:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.images:hover .imageLabel {
+    background-color: #4AC199;
+}
+
+.imageContainer {
+    width: 70%;
+    overflow: auto;
+}
+
+.imageLabel {
+    color: #fff;
+    background: #4aaaa5;
+    z-index: 100;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    line-height: 40px;
+    bottom: 60px;
+    }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 9px;
+    z-index: 1000;
 }
