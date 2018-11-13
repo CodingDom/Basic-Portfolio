@@ -104,6 +104,7 @@ h1 {
     float: left;
     margin-right: 25px;
     margin-top: 7px;
+    box-shadow: 0 0 5px 5px #E5E5E5;
 }
 
 /* Making sure the p tag sticks towards the top of the content */
