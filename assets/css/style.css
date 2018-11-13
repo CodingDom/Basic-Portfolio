@@ -51,10 +51,10 @@ h1 {
     float: left;
 }
 
-/* I used #e5e5e5 instead of #7777772d since it's compatible with my other browsers*/
+/* I used #E5E5E5 instead of #7777772d since it's compatible with my other browsers*/
 /* Had to use an id instead of the nav tag since the colors didn't seem to change when using the tag */
 #Nav {
-    color: #e5e5e5;
+    color: #E5E5E5;
     font-size: 20px;
     float: right;
     margin: 30px 0;
@@ -84,7 +84,7 @@ h1 {
     margin: 10px 30px;
     padding: 20px 0;
     border-top: solid;
-    border-top-color: #e5e5e5;
+    border-top-color: #E5E5E5;
 }
 
 /* Margin used to align picture with text while float was used to wrap the text around the image */
@@ -110,15 +110,18 @@ h2 {
 input,textarea {
     width: 100%;
     font-size: 20px;
-    border-color: #e5e5e5;
+    border-color: #E5E5E5;
+    border-style: solid;
     border-width: thin;
 }
 
 /* Making sure the text area has a nice default size for aesthetic purposes
 and because that's how the homework example looks.
 */
+/* Made it so the textarea can't be resized by people viewing the page */
 textarea {
     height: 200px;
+    resize: none;
 }
 
 /* Used 890 width instead of 100% to compensate for the 10px padding */
@@ -130,15 +133,15 @@ input {
 
 /* Setting up the placeholder text color for the most popular browsers */
 ::placeholder {
-    color: #e5e5e5;
+    color: #E5E5E5;
 }
 
 ::-webkit-input-placeholder {
-    color: #e5e5e5;
+    color: #E5E5E5;
 }
 
 :-ms-input-placeholder {
-    color: #e5e5e5
+    color: #E5E5E5
 }
 
 /* Used to stylize the submit button, also used an id for when it's time to add javascript */
