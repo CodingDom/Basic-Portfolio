@@ -194,7 +194,8 @@ input {
 /* Used to give an overlay/button type of effect to the gallery so viewers will know they're accessible */
 .images:hover {
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
+    box-shadow: 0 0 3px 2px #4AC199;
 }
 
 /* Changed the background of the text to stand out from the non-hovered items */
