@@ -51,6 +51,7 @@ h1 {
     float: left;
 }
 
+/* My Navigation Bar */
 /* I used #E5E5E5 instead of #7777772d since it's compatible with my other browsers*/
 /* Had to use an id instead of the nav tag since the colors didn't seem to change when using the tag */
 #Nav {
