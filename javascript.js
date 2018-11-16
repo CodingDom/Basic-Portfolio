@@ -25,6 +25,7 @@ function carousel(gallery,static,images) {
     //The carousel's current frame
     var num = 0;
 
+    //Event function used for fading effect/frame changing
     var moveCarousel = function( event ) { 
         var op = window.getComputedStyle(gallery).opacity;
         if (op == 0.1 || op == 0.5) {
@@ -46,6 +47,7 @@ function carousel(gallery,static,images) {
         }  
     };
 
+    //Event Listeners for multiple browsers
     gallery.addEventListener('webkitTransitionEnd', function( event ) {moveCarousel();}, false );
     gallery.addEventListener('mozTransitionEnd', function( event ) {moveCarousel();}, false );
     gallery.addEventListener('oTransitionEnd', function( event ) {moveCarousel();}, false );
