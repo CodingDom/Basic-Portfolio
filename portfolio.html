@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     </head>
 
@@ -21,26 +22,31 @@
             <div class="contentHolder">
                 <h1>Portfolio</h1>
                 <div class="content">
-                    <div class="imageContainer">
-                        <div class="images">
-                            <img src="assets/images/ball.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
+                    <div id="container" class="imageContainer">
+                        <div id="first" class="images">
+                            <img class="fading" src="assets/images/abstract3.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
                             <div class="imageLabel">Hangman</div>
+                            <img class="fadeEffect" src="assets/images/abstract.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
                         </div>
-                        <div class="images">
-                            <img src="assets/images/abstract2.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
+                        <div id="second" class="images">
+                            <img class="fading" src="assets/images/cloudy.png" alt="Picture of Dominic" style="width:100%;height:100%;">
                             <div class="imageLabel">RPG Game</div>
+                            <img class="fadeEffect" src="assets/images/abstract4.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
                         </div>
-                        <div class="images">
-                            <img src="assets/images/abstract.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
+                        <div id="third" class="images">
+                            <img class="fading" src="assets/images/diamond.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
                             <div class="imageLabel">Trivia Game</div>
+                            <img class="fadeEffect" src="assets/images/fish.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
                         </div>
-                        <div class="images">
-                            <img src="assets/images/abstract3.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
+                        <div id="fourth" class="images">
+                            <img class="fading" src="assets/images/ball.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
                             <div class="imageLabel">Rutgers Info Widget</div>
+                            <img class="fadeEffect" src="assets/images/football.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
                         </div>
-                        <div class="images">
-                            <img src="assets/images/beach.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
+                        <div id="fifth" class="images">
+                            <img class="fading" src="assets/images/tiger.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
                             <div class="imageLabel">Rock Paper Scissors</div>
+                            <img class="fadeEffect" src="assets/images/bear.jpg" alt="Picture of Dominic" style="width:100%;height:100%;">
                         </div>
                     </div>
                 </div>
@@ -48,5 +54,6 @@
             <div class="footer">
                 Copyright &copy;
             </div>
+            <script type="text/javascript" src="javascript.js"></script>
         </body>
 </html>    

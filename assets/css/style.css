@@ -188,14 +188,16 @@ input {
     height: 150px;
     width: 250px;
     margin-right: 35px;
-    margin-bottom: 40px;
-    float: left;
+    margin-bottom: 30px;
+    display: inline-block;
+    /* float: left; */
+    opacity: 0.9;
+    position: relative;
 }
 
 /* Used to give an overlay/button type of effect to the gallery so viewers will know they're accessible */
 .images:hover {
     cursor: pointer;
-    opacity: 0.9;
     box-shadow: 0 0 3px 2px #4AC199;
 }
 
@@ -204,12 +206,31 @@ input {
     background-color: #4AC199;
 }
 
+.images:hover .fading {
+    opacity: 0.5;
+}
+
 /* The smaller width causes the images to be in columns of two */
 /* The overflow is set to auto to allow the main content's background to include the gallery */
 .imageContainer {
     width: 70%;
     overflow: auto;
     padding: 3px 0 0 3px;
+}
+
+.fading {
+    z-index: 5;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5 ease;
+}
+
+.fadeEffect {
+    z-index: -1;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5 ease;
 }
 
 /* Designing the banner of text along the gallery thumnbnails */
