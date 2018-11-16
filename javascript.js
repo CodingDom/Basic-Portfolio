@@ -15,7 +15,12 @@ for (var i = 0; i < container.children.length; i++) {
     carousel(container.children[i].children[0],container.children[i].children[2],galleries[container.children[i].getAttribute('id')]);
 };
 
-
+/* 
+gallery - The img that is fading
+static - The img behind the fading img to add a bit of transition effect
+images - The array of images for that specific carousel
+originStyle - Used to save the style for when I reset the inline css of the fading img
+*/
 function carousel(gallery,static,images) {
     //console.log(gallery,static,images);
 
