@@ -218,6 +218,7 @@ input {
     padding: 3px 0 0 3px;
 }
 
+/* Attempting to make my own carousel */
 .fading {
     z-index: 5;
     transition: opacity 0.5s ease;
