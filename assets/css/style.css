@@ -191,8 +191,9 @@ input {
     margin-bottom: 30px;
     display: inline-block;
     /* float: left; */
-    opacity: 1;
     position: relative;
+    background-size: contain;
+    opacity: 0;
 }
 
 /* Used to give an overlay/button type of effect to the gallery so viewers will know they're accessible */
