@@ -42,13 +42,15 @@ function carousel(gallery,static,images) {
             gallery.style.opacity = 1;
         }    
         else {
-            static.src = "assets/images/"+images[num];
+            //Checks if the hover event is still active
             if (window.getComputedStyle(gallery.parentElement).boxShadow != "none") {
                 gallery.style.opacity = 0.1;
             }
             else {
+                //Resets the css when the hover ends(when the boxshadow is removed)
                 gallery.setAttribute('style',originStyle);
             }
+            static.src = "assets/images/"+images[num];
         }  
     };
 
