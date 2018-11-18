@@ -85,6 +85,7 @@ h1 {
 .contentHolder {
     width: 960px;
     margin: 120px auto;
+    margin-bottom: 0;
     position: relative;
     background: white;
     border-style: solid;
@@ -248,10 +249,12 @@ input {
     }
 
 /* Designs and placement for my page's footer */
+.wrapper {
+    min-height: calc(100vh - 188px);
+}
+
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: absolute;
     width: 100%;
     background-color: #666666;
     border-top: 8px solid #4aaaa5;
